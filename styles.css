@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li, a, button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #e1e1e1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 2%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #232327;
+    position: fixed;
+    z-index: 9;
+}
+
+.nav__links {
+    list-style: none;
+
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(143, 17, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    margin-left: 10px;
+    
+}
+
+button:hover {
+    background-color: rgba(108, 22, 22, 0.8);
+}
+
+body {
+    background-color: #282726;
+}
+
+section {
+    padding: 350px 100px;
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    background: linear-gradient(to top, rgba(40, 39, 38, 1) 0%,rgba(40, 39, 38, .7) 10%,rgba(40, 39, 38, .2) 40%,rgba(40, 39, 38, .10) 70%, rgba(255, 255, 255, 1) 100%), url('./images/background_cover_silas_schnider.jpg');
+    
+    background-size: cover;
+    background-position: 0% 40%;
+    color: #f3f3f3; 
+}
+
+div {
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #edf0f1; /* change colors of all subdivs when come back*/
+}
+div2 {
+    color: #397638;
+}
+div3 {
+    color: #6c488d;
+}
+
+section2 {
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #edf0f1;   
+    order: 2;
+    position: absolute;
+}
+
+h1 {
+    color: #edf0f1;
+    
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+p1 {
+    color: #878686;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 500;
+    font-size: 18px;
+    order: 1;
+    padding: 100px 200px 100px 50px;
+    line-height: 175%;
+}
