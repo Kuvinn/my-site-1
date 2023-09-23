@@ -8,25 +8,34 @@
 </head>
 
 <body>
-    <header class = "sticky">
+    <header>
         <nav>
             <ul class="nav__links">
-                <li><a href="#">Kevin Pham</a></li> <!-- replace with logo eventually-->
-                <li><a href="#">Home</a></li>
+                <!--on page links-->
+                <li><a class="logo" href="#home">Kevin Pham</a></li> <!-- replace with logo eventually-->
+                <li><a href="#home" class ="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#">Resume</a></li>
+                <!-- other page links-->
+                <nav id="nav__links__right">
+                    <li><a class="right" href="#">Projects</a></li>
+                    <li><a class="right" href="#">Gallery</a></li>
+                    <li><a class="right" href="#">Spotify Dive</a></li>
+                    <a href="#"><button>Contact</button></a> 
+                </nav>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Contact</button></a> 
     </header>
 
-    <section id="home">
+    <!--introduction section-->
+    <section id="home"> 
         Hi, I'm Kevin Pham.
         <br>
         <br>
         <br>
         <br>
         <br>
+    
         <div>
             I'm a 
             <div2>
@@ -40,22 +49,7 @@
             </div3>
         </div>
     </section>
-    
-    <section2 id="about">
-        <h1>About</h1>
-    </section2>
-    
-    <p1> 
-        Currently a third-year studying Computer Science (BS+MS) at the University of California, Riverside, Kevin is a learning coder and creator. 
-        Hailing from his hometown of Anaheim, California, Kevin first was introduced to Javascript at Cypress High School, and went on to learn C++ and C# from his courses at UCR. 
-        He has picked up his knowledge in HTML and CSS from YouTube tutorials, as well as a variety of online sources and references.
 
-        <br>
-        <br>
-
-        In his spare time, Kevin likes to search for new music artists and work out. He is a Taekwondo black belt and aspires to learn more about the martial art. He loves the outdoors and heights, and spends much of his spare time practicing how to sketch.
-    </p1>
-    
+    <script src="script.js"></script>
 </body>
-
 </html>
