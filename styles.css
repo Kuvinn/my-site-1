@@ -76,15 +76,16 @@ button{
 
 section{
     padding: 50px 50px;
-    display: flex;
+    display: grid;
     align-items: center;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    color: #edf0f1;   
+    font-size: 18px;
+    color: #d8d8d8;   
     order: 2;
-    position: absolute;
+    position: relative;
     width: 100%;
+    background-color: rgba(40, 39, 38);
 }
 
 div {
@@ -95,12 +96,37 @@ div {
     color: #edf0f1; /* change colors of all subdivs when come back*/
 }
 div2 {
-    color: #397638;
+    color: rgb(187, 175, 6);
 }
 div3 {
     color: rgb(202, 38, 13);
 }
 
+h1 {
+    font-weight: 500;
+    color: rgb(125, 38, 26);
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 300;
+    color: rgb(187, 175, 6);
+}
 #nav__links__right{
     float: right;    
+}
+
+#about{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #edf0f1;   
+}
+ul{
+    padding: 0px 50px;
+}
+
+#resume{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #edf0f1;  
 }
