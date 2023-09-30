@@ -88,17 +88,15 @@ section{
     background-color: rgba(40, 39, 38);
 }
 
-div {
+#self{
     position: absolute;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 32px;
     color: #edf0f1; /* change colors of all subdivs when come back*/
 }
+
 div2 {
-    color: rgb(187, 175, 6);
-}
-div3 {
     color: rgb(202, 38, 13);
 }
 
@@ -110,7 +108,7 @@ h1 {
 h2 {
     font-size: 22px;
     font-weight: 300;
-    color: rgb(187, 175, 6);
+    color: rgb(202, 140, 126);
 }
 #nav__links__right{
     float: right;    
@@ -129,4 +127,47 @@ ul{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     color: #edf0f1;  
+}
+
+#intro{
+    background: linear-gradient(to top, rgba(40, 39, 38, 1) 0%,rgba(40, 39, 38, .7) 10%,rgba(40, 39, 38, .2) 40%,rgba(40, 39, 38, .10) 70%, rgba(255, 255, 255, 0) 100%), url(images/background_steven_kamenar.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    padding: 300px 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: rgb(244, 244, 244);  
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#blob{
+    background-color: rgb(6, 39, 9);
+    padding: 50px 50px;
+    box-shadow: 0 10px 5px 5px rgba(0,0,0, .5);
+    animation: animate 10s ease-in-out infinite;
+    transition: all 1.5s ease-in-out;
+    border-radius: 70% 30% 40% 60%/ 40% 70% 30% 60%;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
+    25%{
+        border-radius: 50% 60% 50% 50%/ 60% 60% 70% 70%;
+    }
+    50%{
+        border-radius: 70% 30% 40% 60%/ 40% 70% 30% 60%;
+    }
+    75%{
+        border-radius: 50% 60% 50% 50%/ 60% 60% 70% 70%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+    }
 }
