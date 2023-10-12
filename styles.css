@@ -198,3 +198,7 @@ ul{
     transform: translate(0%, -50%);
     gap: 6vmin;
 }
+
+#black{
+    background-color: black;
+}
