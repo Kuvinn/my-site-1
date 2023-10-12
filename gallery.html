@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kevin Pham - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="gallery">
     <!--animated scrolling-->
+
+    <!--navbar section-->
+    <header>
+        <nav>
+            <ul class="nav__links">
+                <!--on page links-->
+                <li><a class="logo" href="index.html">Kevin Pham</a></li> <!-- replace with logo eventually-->
+                <!-- other page links-->
+                <nav id="nav__links__right">
+                    <li><a class="right" href="projects.html">Projects</a></li>
+                    <li><a class="right" href="gallery.html">Gallery</a></li>
+                    <li><a class="right" href="spotify.html">Spotify Dive</a></li>
+                    <a href="index.html#contact"><button>Contact</button></a> 
+                </nav>
+            </ul>
+        </nav>
+    </header>
+
+    <!--scrolling section-->
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image" draggable="false" src="images/image 1.jpg">
+        <img class="image" draggable="false" src="images/image 2.jpg">
+        <img class="image" draggable="false" src="images/image 3.HEIC">
+        <img class="image" draggable="false" src="images/image 4.jpg">
+        <img class="image" draggable="false" src="images/image 5.jpg">
+        <img class="image" draggable="false" src="images/image 6.jpg">
+        <img class="image" draggable="false" src="images/image 7.HEIC">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

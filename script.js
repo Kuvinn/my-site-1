@@ -20,3 +20,45 @@ window.addEventListener('scroll', () => {   //as scroll
     });
 });
 //using https://www.youtube.com/watch?v=nwCtWn-xFz0&t=1472s&ab_channel=ByteGrad's script for scrolling
+
+//gallery script
+const track = document.getElementById("image-track");
+
+window.onmousedown = e => {
+    track.dataset.mouseDownAt = e.clientX;
+}
+
+window.onmousemove = e => {
+    if (track.dataset.mouseDownAt === "0") return;
+
+    const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+
+    const percentage = (mouseDelta / maxDelta) * -40,
+        nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage2 = Math.max(Math.min(nextPercentage, 0), -100);
+
+    track.dataset.percentage = nextPercentage2;
+
+    track.animate({
+        transform: `translate(${nextPercentage}%, -50%)`
+      }, { duration: 1200, fill: "forwards" });
+      
+      for(const image of track.getElementsByClassName("image")) {
+        image.animate({
+          objectPosition: `${100 + nextPercentage}% center`
+        }, { duration: 1200, fill: "forwards" });
+      }
+}
+
+window.onmouseup = () => {
+    track.dataset.mouseDownAt = "0";
+    track.dataset.prevPercentage = track.dataset.percentage;
+
+    for(const image of track.getElementsByClassName("image")){
+        image.style.objectPosition = `${nextPercentage2+100} 50%`;
+    }
+}
+
+
+//using https://www.youtube.com/watch?v=PkADl0HubMY&list=LL&index=149&ab_channel=Hyperplexed
