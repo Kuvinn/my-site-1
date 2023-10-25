@@ -6,7 +6,7 @@
     <title>Kevin Pham - Spotify Dive</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="black">
     <!--pallarax scroll-->
 
     <!--navbar section-->
@@ -15,17 +15,42 @@
             <ul class="nav__links">
                 <!--on page links-->
                 <li><a class="logo" href="index.html">Kevin Pham</a></li> <!-- replace with logo eventually-->
+                <li><a href="index.html">Home</a></li>
                 <!-- other page links-->
                 <nav id="nav__links__right">
                     <li><a class="right" href="projects.html">Projects</a></li>
                     <li><a class="right" href="gallery.html">Gallery</a></li>
-                    <li><a class="right" href="spotify.html">Spotify Dive</a></li>
+                    <!-- <li><a class="right" href="spotify.html">Spotify Dive</a></li> -->
                     <a href="index.html#contact"><button>Contact</button></a> 
                 </nav>
             </ul>
         </nav>
     </header>
 
-    <!--introduction section-->
+    <!--artist section-->
+    <!--need 3 assets; silhouette, artist, and shadow of both
+        what i want: 
+        i want shadow to kinda race down the screen on load in
+        artist should fade in
+        silhouette should fade in on top of artist
+        maybe i can do; on hover, fade silhouette?
+        idea: have shadow be on highest z layer, which is just png of silhouette of different shade but bigger with transparency where artist should be
+        silhouette is just a box within confines of shadow on 2nd highest z layer; will slide down on hover
+        artist is on least z layer. just needs to exist
+    -->
+    <section2 id="kendrick">
+        Kendrick Lamar
+    </section2>
+    <section2 id="rocky">
+        A$AP Rocky
+    </section2>
+        
+    <section2 id="mac">
+        Mac Miller
+    </section2>
+    <section id="intro2">
+        Who do you listen to?
+    </section>
+
 </body>
 </html>

@@ -71,7 +71,7 @@ button{
     background: linear-gradient(to top, rgba(40, 39, 38, 1) 0%,rgba(40, 39, 38, .7) 10%,rgba(40, 39, 38, .2) 40%,rgba(40, 39, 38, .10) 70%, rgba(255, 255, 255, .8) 100%), url('./images/background_cover_silas_schnider.jpg');
     background-size: cover;
     background-position: 0% 40%;
-    color: #f3f3f3; 
+    color: #000000; 
 }
 
 section{
@@ -81,6 +81,20 @@ section{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
+    color: #d8d8d8;   
+    order: 2;
+    position: relative;
+    width: 100%;
+    background-color: rgba(40, 39, 38);
+}
+
+section2{
+    padding: 450px 50px;
+    display: grid;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
     color: #d8d8d8;   
     order: 2;
     position: relative;
@@ -115,6 +129,12 @@ h2 {
 }
 
 #about{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #edf0f1;   
+}
+
+#info{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     color: #edf0f1;   
@@ -199,6 +219,36 @@ ul{
     gap: 6vmin;
 }
 
-#black{
+#black {
     background-color: black;
+}
+
+/*spotify dive sections? not the final product but it's nice to have for applications as a placeholder*/
+
+#intro2{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    padding: 300px 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: rgb(244, 244, 244);  
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+#kendrick {
+    background: url(images/sample_kendrick_background.jpg);
+    background-size: cover;
+}
+#rocky {
+    background: url(images/sample_asap_rocky_background.jpg);
+    background-size: cover;
+}
+#mac {
+    background: url(images/sample_mac_miller_performing_background.jpg);
+    background-size: cover;
 }
